@@ -82,7 +82,7 @@ export const InputWithIcon = React.forwardRef<HTMLInputElement, Props>(
           ref={ref}
           {...props}
           className={cn(
-            "rounded-xl border border-gray-300 bg-white shadow-sm hover:border-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200",
+            "rounded-xl border border-gray-300 bg-white shadow-sm hover:border-rose-300 focus:border-rose-500 focus:ring-2 focus:ring-rose-100 transition-all duration-200",
             paddingClass,
             className
           )}

@@ -112,8 +112,8 @@ const Modal = React.forwardRef<HTMLDivElement, ModalProps>(
                 className={cn(
                   "px-4 py-2 rounded-md text-white font-medium transition",
                   variant === "dark"
-                    ? "bg-indigo-500 hover:bg-indigo-600"
-                    : "bg-indigo-600 hover:bg-indigo-700"
+                    ? "bg-rose-600 hover:bg-rose-700"
+                    : "bg-rose-700 hover:bg-rose-800"
                 )}
               >
                 {doneText}

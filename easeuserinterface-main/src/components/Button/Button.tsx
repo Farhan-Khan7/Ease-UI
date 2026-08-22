@@ -2,6 +2,7 @@ import { Slot } from "@radix-ui/react-slot";
 import React, { useEffect, useRef } from "react";
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
+import gsap from "gsap";
 import { cn } from "@/libs/utils";
 // import gsap from "gsap";
 import { entranceAnimations } from "@/libs/animations/entranceAnimation";
@@ -22,12 +23,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         dark: "bg-slate-900 text-white",
-        primary: "bg-indigo-600 hover:bg-indigo-700 text-white",
-        secondary: "bg-indigo-500 hover:bg-indigo-700 text-white",
+        primary: "bg-rose-700 hover:bg-rose-800 text-white shadow-sm shadow-rose-950/20",
+        secondary: "bg-rose-600 hover:bg-rose-700 text-white",
         destructive: "bg-red-700 text-white hover:bg-red-900",
         ok: "bg-green-500 hover:bg-green-700",
         ghost: "bg-gray-50 hover:bg-gray-100 text-gray-700",
-        link: "bg-transparent hover:bg-transparent text-indigo-600",
+        link: "bg-transparent hover:bg-transparent text-rose-700",
         outline:
           "bg-transparent hover:bg-gray-100 text-gray-700 border border-gray-300",
       },

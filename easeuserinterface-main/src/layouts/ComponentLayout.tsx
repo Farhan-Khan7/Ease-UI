@@ -7,15 +7,9 @@ const ComponentLayout = ({}: Props) => {
   const navigate = useNavigate();
 
   const components = [
-    { name: "Button", icon: "B", color: "bg-blue-500" },
-    { name: "Card", icon: "C", color: "bg-purple-500" },
-    { name: "Modal", icon: "M", color: "bg-orange-500" },
-    { name: "Input", icon: "I", color: "bg-green-500" },
-    { name: "Form", icon: "F", color: "bg-red-500" },
-    { name: "Navbar", icon: "N", color: "bg-cyan-500" },
-    { name: "Carousel", icon: "C", color: "bg-pink-500" },
-    { name: "Tooltip", icon: "T", color: "bg-yellow-500" },
-    { name: "Layout", icon: "L", color: "bg-indigo-500" },
+    { name: "Button", icon: "B" }, { name: "Card", icon: "C" }, { name: "Modal", icon: "M" },
+    { name: "Input", icon: "I" }, { name: "Form", icon: "F" }, { name: "Navbar", icon: "N" },
+    { name: "Carousel", icon: "C" }, { name: "Tooltip", icon: "T" }, { name: "Layout", icon: "L" },
   ];
 
   return (
@@ -46,13 +40,13 @@ const ComponentLayout = ({}: Props) => {
                   flex items-center gap-3 hover:scale-[1.02]
                   ${
                     location.pathname === `/components/${component.name.toLowerCase()}`
-                      ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/25"
+                      ? "ease-accent-gradient text-white shadow-lg shadow-rose-900/20"
                       : "hover:bg-[var(--hover-bg)]"
                   }
                 `}
               >
                 <div
-                  className={`w-8 h-8 rounded-lg ${component.color} flex items-center justify-center text-white text-sm font-bold`}
+                  className="w-8 h-8 rounded-lg ease-accent-gradient flex items-center justify-center text-white text-sm font-bold"
                 >
                   {component.icon}
                 </div>

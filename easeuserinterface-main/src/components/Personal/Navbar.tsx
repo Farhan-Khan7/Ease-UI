@@ -35,13 +35,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-20 w-full flex items-center justify-between px-6 md:px-12 border-b border-[var(--border-color)] bg-[var(--bg-color)]">
+    <nav className="sticky top-0 z-40 h-20 w-full flex items-center justify-between px-6 md:px-12 border-b border-[var(--border-color)] bg-[var(--bg-color)]/95 backdrop-blur-xl">
       <div className="flex items-center gap-8">
         <div 
           onClick={() => navigate("/")}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <div className="w-10 h-10 rounded-xl ease-accent-gradient shadow-lg shadow-rose-900/20 flex items-center justify-center group-hover:scale-110 transition-transform">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
           <h1 className="font-bold text-2xl" style={{ color: "var(--text-color)" }}>
@@ -69,7 +69,7 @@ const Navbar = () => {
           style={{ color: "var(--text-color)" }}
         >
           Components
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 ease-accent-gradient transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li 
           onClick={() => navigate("about")}
@@ -77,7 +77,7 @@ const Navbar = () => {
           style={{ color: "var(--muted-text)" }}
         >
           About
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 ease-accent-gradient transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li 
           onClick={() => navigate("templates")}
@@ -85,7 +85,7 @@ const Navbar = () => {
           style={{ color: "var(--muted-text)" }}
         >
           Templates
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 ease-accent-gradient transition-all duration-300 group-hover:w-full"></span>
         </li>
         
         <a
@@ -105,9 +105,9 @@ const Navbar = () => {
           style={{ color: "var(--text-color)" }}
         >
           {mode === "dark" ? (
-            <Sun size={20} className="text-yellow-400" />
+            <Sun size={20} className="text-rose-400" />
           ) : (
-            <Moon size={20} className="text-gray-600" />
+            <Moon size={20} className="text-rose-700" />
           )}
         </button>
       </ul>
@@ -145,7 +145,7 @@ const Navbar = () => {
             style={{ color: "var(--text-color)" }}
           >
             Components
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 ease-accent-gradient transition-all duration-300 group-hover:w-full"></span>
           </button>
           
           <button 
@@ -157,7 +157,7 @@ const Navbar = () => {
             style={{ color: "var(--muted-text)" }}
           >
             About
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 ease-accent-gradient transition-all duration-300 group-hover:w-full"></span>
           </button>
           
           <button 
@@ -169,7 +169,7 @@ const Navbar = () => {
             style={{ color: "var(--muted-text)" }}
           >
             Templates
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 ease-accent-gradient transition-all duration-300 group-hover:w-full"></span>
           </button>
           
           <a
@@ -190,12 +190,12 @@ const Navbar = () => {
           >
             {mode === "dark" ? (
               <>
-                <Sun size={20} className="text-yellow-400" />
+                <Sun size={20} className="text-rose-400" />
                 <span>Light Mode</span>
               </>
             ) : (
               <>
-                <Moon size={20} className="text-gray-600" />
+                <Moon size={20} className="text-rose-700" />
                 <span>Dark Mode</span>
               </>
             )}

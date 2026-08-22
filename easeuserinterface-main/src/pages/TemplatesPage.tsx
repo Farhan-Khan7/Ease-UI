@@ -35,7 +35,7 @@ const TemplatesPage = () => {
     <div className="min-h-screen bg-[var(--bg-color)]">
       {/* Hero Section */}
       <section className="relative px-8 pt-20 pb-20 overflow-hidden">
-        <div className="absolute inset-0 dark:from-zinc-900 dark:via-purple-900/20 dark:to-blue-900/20 opacity-50" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,var(--accent-glow),transparent_52%)]" />
 
         <div className="relative max-w-7xl mx-auto text-center">
           <h1
@@ -65,7 +65,7 @@ const TemplatesPage = () => {
                 key={index}
                 className="flex items-start gap-4 p-6 rounded-xl bg-[var(--bg-color)] border border-[var(--border-color)]"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white shrink-0">
+                <div className="w-12 h-12 rounded-xl ease-accent-gradient flex items-center justify-center text-white shrink-0">
                   {feature.icon}
                 </div>
 
@@ -91,7 +91,7 @@ const TemplatesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="px-8 py-24 bg-gradient-to-br from-blue-600 to-purple-600">
+      <section className="px-8 py-24 ease-accent-gradient">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Need a Custom Template?
@@ -103,7 +103,7 @@ const TemplatesPage = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-600 font-semibold hover:bg-gray-100 transition-all">
+            <button className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-rose-800 font-semibold hover:bg-rose-50 transition-all">
               Request Template
               <ArrowRight className="w-5 h-5" />
             </button>

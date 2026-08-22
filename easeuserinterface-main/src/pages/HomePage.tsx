@@ -44,12 +44,8 @@ const HomePage = ({}: Props) => {
   ];
 
   const componentPreviews = [
-    { name: "Button", color: "bg-blue-500" },
-    { name: "Card", color: "bg-purple-500" },
-    { name: "Input", color: "bg-green-500" },
-    { name: "Modal", color: "bg-orange-500" },
-    { name: "Form", color: "bg-red-500" },
-    { name: "Navbar", color: "bg-cyan-500" },
+    { name: "Button" }, { name: "Card" }, { name: "Input" },
+    { name: "Modal" }, { name: "Form" }, { name: "Navbar" },
   ];
 
   return (
@@ -57,8 +53,8 @@ const HomePage = ({}: Props) => {
       {/* <Navbar /> */}
       <LayoutContent className="bg-[var(--bg-color)]">
         {/* Hero Section */}
-        <section className="relative px-8  pb-32 overflow-hidden">
-          <div className="absolute inset-0   dark:from-zinc-900 dark:via-purple-900/20 dark:to-blue-900/20 opacity-50" />
+        <section className="relative px-6 md:px-8 pb-28 pt-12 overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,var(--accent-glow),transparent_52%)]" />
 
           <div className="relative max-w-7xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--card-bg)] border border-[var(--border-color)] mb-8">
@@ -76,7 +72,7 @@ const HomePage = ({}: Props) => {
               style={{ color: "var(--text-color)" }}
             >
               Build Beautiful UIs
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-clip-text text-transparent ease-accent-gradient">
                 With Ease
               </span>
             </h1>
@@ -92,7 +88,7 @@ const HomePage = ({}: Props) => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => navigate("components")}
-                className="flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:opacity-90 transition-all hover:scale-105 shadow-lg shadow-blue-500/25"
+                className="flex items-center gap-2 px-8 py-4 rounded-xl ease-accent-gradient text-white font-semibold hover:opacity-90 transition-all hover:scale-105 shadow-lg shadow-rose-900/20"
               >
                 Get Started
                 <ArrowRight className="w-5 h-5" />
@@ -114,10 +110,10 @@ const HomePage = ({}: Props) => {
                   onClick={() =>
                     navigate(`components/${component.name.toLowerCase()}`)
                   }
-                  className="group relative p-6 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-blue-500 transition-all hover:scale-105 cursor-pointer"
+                  className="group relative p-6 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:border-rose-400 transition-all hover:scale-105 cursor-pointer"
                 >
                   <div
-                    className={`w-12 h-12 rounded-xl ${component.color} mx-auto mb-3 flex items-center justify-center text-white font-bold`}
+                    className="w-12 h-12 rounded-xl ease-accent-gradient mx-auto mb-3 flex items-center justify-center text-white font-bold"
                   >
                     {component.name[0]}
                   </div>
@@ -157,7 +153,7 @@ const HomePage = ({}: Props) => {
                   key={index}
                   className="p-8 rounded-2xl bg-[var(--bg-color)] border border-[var(--border-color)] hover:shadow-xl transition-all hover:-translate-y-1"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white mb-6">
+                  <div className="w-14 h-14 rounded-xl ease-accent-gradient flex items-center justify-center text-white mb-6">
                     {feature.icon}
                   </div>
                   <h3
@@ -196,7 +192,7 @@ const HomePage = ({}: Props) => {
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)]">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-sm">
+                  <div className="w-8 h-8 rounded-full ease-accent-gradient text-white flex items-center justify-center font-bold text-sm">
                     1
                   </div>
                   <h3
@@ -215,7 +211,7 @@ const HomePage = ({}: Props) => {
 
               <div className="p-6 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)]">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-sm">
+                  <div className="w-8 h-8 rounded-full ease-accent-gradient text-white flex items-center justify-center font-bold text-sm">
                     2
                   </div>
                   <h3
@@ -246,7 +242,7 @@ function App() {
         </section>
 
         {/* CTA Section */}
-        <section className="px-8 py-24 bg-gradient-to-br from-blue-600 to-purple-600">
+        <section className="px-6 md:px-8 py-24 ease-accent-gradient">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to Build Something Amazing?
@@ -258,7 +254,7 @@ function App() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => navigate("components")}
-                className="flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-600 font-semibold hover:bg-gray-100 transition-all"
+                className="flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-rose-800 font-semibold hover:bg-rose-50 transition-all"
               >
                 Start Building
                 <ArrowRight className="w-5 h-5" />
@@ -276,7 +272,7 @@ function App() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                <div className="w-8 h-8 rounded-lg ease-accent-gradient flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 <span

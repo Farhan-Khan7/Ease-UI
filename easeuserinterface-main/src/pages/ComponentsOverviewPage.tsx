@@ -11,63 +11,63 @@ const ComponentsOverviewPage = ({}: Props) => {
       name: "Button", 
       description: "Interactive buttons with multiple variants and sizes",
       icon: <Zap className="w-6 h-6" />,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-rose-600 to-red-800",
       route: "button"
     },
     { 
       name: "Card", 
       description: "Versatile card containers for content organization",
       icon: <Layout className="w-6 h-6" />,
-      color: "from-purple-500 to-pink-500",
+      color: "from-rose-500 to-red-700",
       route: "card"
     },
     { 
       name: "Modal", 
       description: "Dialog overlays for focused user interactions",
       icon: <Code className="w-6 h-6" />,
-      color: "from-orange-500 to-red-500",
+      color: "from-red-500 to-rose-800",
       route: "modal"
     },
     { 
       name: "Input", 
       description: "Form inputs with validation and styling options",
       icon: <Code className="w-6 h-6" />,
-      color: "from-green-500 to-emerald-500",
+      color: "from-rose-500 to-red-700",
       route: "input"
     },
     { 
       name: "Form", 
       description: "Complete form components with validation and styling",
       icon: <Code className="w-6 h-6" />,
-      color: "from-red-500 to-rose-500",
+      color: "from-red-600 to-rose-800",
       route: "form"
     },
     { 
       name: "Navbar", 
       description: "Navigation bars with responsive design",
       icon: <Layout className="w-6 h-6" />,
-      color: "from-indigo-500 to-purple-500",
+      color: "from-rose-600 to-red-800",
       route: "navbar"
     },
     { 
       name: "Carousel", 
       description: "Image and content sliders with smooth transitions",
       icon: <Palette className="w-6 h-6" />,
-      color: "from-pink-500 to-rose-500",
+      color: "from-rose-500 to-red-700",
       route: "carousel"
     },
     { 
       name: "Tooltip", 
       description: "Contextual help and information popovers",
       icon: <Sparkles className="w-6 h-6" />,
-      color: "from-yellow-500 to-orange-500",
+      color: "from-red-500 to-rose-700",
       route: "tooltip"
     },
     { 
       name: "Layout", 
       description: "Flexible layout structures for applications",
       icon: <Layout className="w-6 h-6" />,
-      color: "from-cyan-500 to-blue-500",
+      color: "from-rose-600 to-red-800",
       route: "layout"
     }
   ];
@@ -100,7 +100,7 @@ const ComponentsOverviewPage = ({}: Props) => {
       {/* Header */}
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-xl ease-accent-gradient flex items-center justify-center shadow-lg shadow-rose-900/20">
             <Sparkles className="w-7 h-7 text-white" />
           </div>
           <div>
@@ -121,7 +121,7 @@ const ComponentsOverviewPage = ({}: Props) => {
             key={index}
             className="flex items-start gap-3 p-4 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)]"
           >
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white shrink-0">
+            <div className="w-10 h-10 rounded-lg ease-accent-gradient flex items-center justify-center text-white shrink-0">
               {feature.icon}
             </div>
             <div>
@@ -175,7 +175,7 @@ const ComponentsOverviewPage = ({}: Props) => {
       </div>
 
       {/* Getting Started */}
-      <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+      <div className="mt-12 p-8 rounded-2xl ease-accent-gradient text-white shadow-xl shadow-rose-950/20">
         <h2 className="text-2xl font-bold mb-4">
           Quick Start
         </h2>
@@ -184,7 +184,7 @@ const ComponentsOverviewPage = ({}: Props) => {
         </p>
         <button 
           onClick={() => navigate("button")}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-blue-600 font-semibold hover:bg-gray-100 transition-all"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-rose-800 font-semibold hover:bg-rose-50 transition-all"
         >
           Explore Components
           <ArrowRight className="w-4 h-4" />

@@ -15,7 +15,7 @@ const navbarVariants = cva(
       variant: {
         dark: "bg-slate-900 text-white",
         light: "bg-white text-gray-800 shadow",
-        primary: "bg-indigo-600 text-white",
+        primary: "bg-rose-700 text-white",
         glass: "backdrop-blur-md bg-white/10 text-white border border-white/20",
       },
       size: {

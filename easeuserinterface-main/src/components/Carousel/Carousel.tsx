@@ -173,7 +173,7 @@ const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(
                 className={cn(
                   "w-3 h-3 rounded-full cursor-pointer transition-all",
                   index === currentIndex
-                    ? "bg-indigo-600 w-6"
+                    ? "bg-rose-700 w-6"
                     : "bg-gray-300 hover:bg-gray-400"
                 )}
                 aria-label={`Go to slide ${index + 1}`}

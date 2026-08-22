@@ -43,13 +43,13 @@ import {
   <LayoutSidebar className="p-4">
     <nav>
       <ul className="space-y-2">
-        <li className="cursor-pointer hover:text-blue-500">
+        <li className="cursor-pointer hover:text-rose-600">
           Dashboard
         </li>
-        <li className="cursor-pointer hover:text-blue-500">
+        <li className="cursor-pointer hover:text-rose-600">
           Settings
         </li>
-        <li className="cursor-pointer hover:text-blue-500">
+        <li className="cursor-pointer hover:text-rose-600">
           Profile
         </li>
       </ul>
@@ -227,15 +227,15 @@ import {
             <LayoutSidebar className="p-4">
               <nav>
                 <ul className="space-y-2">
-                  <li className="cursor-pointer hover:text-blue-500">
+                  <li className="cursor-pointer hover:text-rose-600">
                     Dashboard
                   </li>
 
-                  <li className="cursor-pointer hover:text-blue-500">
+                  <li className="cursor-pointer hover:text-rose-600">
                     Settings
                   </li>
 
-                  <li className="cursor-pointer hover:text-blue-500">
+                  <li className="cursor-pointer hover:text-rose-600">
                     Profile
                   </li>
                 </ul>

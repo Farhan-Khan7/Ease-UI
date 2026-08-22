@@ -62,7 +62,7 @@ const AboutPage = ({}: Props) => {
             style={{ color: "var(--text-color)" }}
           >
             Build Beautiful UIs
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-clip-text text-transparent ease-accent-gradient">
               With Ease
             </span>
           </h1>
@@ -87,7 +87,7 @@ const AboutPage = ({}: Props) => {
                 key={index}
                 className="p-6 rounded-2xl bg-[var(--card-bg)] border border-[var(--border-color)]"
               >
-                <div className="text-3xl font-bold mb-1 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <div className="text-3xl font-bold mb-1 bg-clip-text text-transparent ease-accent-gradient">
                   {stat.number}
                 </div>
                 <div className="text-sm" style={{ color: "var(--muted-text)" }}>
@@ -123,7 +123,7 @@ const AboutPage = ({}: Props) => {
                 key={index}
                 className="p-8 rounded-2xl bg-[var(--bg-color)] border border-[var(--border-color)] hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white mb-6">
+                <div className="w-14 h-14 rounded-xl ease-accent-gradient flex items-center justify-center text-white mb-6">
                   {feature.icon}
                 </div>
                 <h3 
@@ -146,7 +146,7 @@ const AboutPage = ({}: Props) => {
 
 
       {/* CTA Section */}
-      <section className="px-8 py-24 bg-gradient-to-br from-blue-600 to-purple-600">
+      <section className="px-8 py-24 ease-accent-gradient">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <Rocket className="w-8 h-8 text-white" />
@@ -162,7 +162,7 @@ const AboutPage = ({}: Props) => {
               href="https://github.com/Farhan-Khan7"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-600 font-semibold hover:bg-gray-100 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-rose-800 font-semibold hover:bg-rose-50 transition-all"
             >
               <Github className="w-5 h-5" />
               View on GitHub

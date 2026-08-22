@@ -10,7 +10,7 @@ const tooltipVariants = cva(
       variant: {
         default: "bg-gray-900 text-white",
         dark: "bg-slate-800 text-white",
-        primary: "bg-indigo-600 text-white",
+        primary: "bg-rose-700 text-white",
         light: "bg-white text-gray-800 border border-gray-200",
       },
     },

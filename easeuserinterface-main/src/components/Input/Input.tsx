@@ -13,7 +13,7 @@ const inputVariants = cva(
       },
       tone: {
         default:
-          "border-gray-300 focus:ring-2 focus:ring-blue-400 focus:border-blue-400",
+          "border-gray-300 focus:ring-2 focus:ring-rose-300 focus:border-rose-500",
         error:
           "border-red-400 focus:ring-2 focus:ring-red-400 focus:border-red-400",
         success:
